@@ -50,6 +50,7 @@
             border-bottom: 2px solid #DC951F;
             border-radius: 2px;
             flex-shrink: 0;
+            outline: none;
             cursor: pointer;
             color: #fff;
             font-family: 'Open Sans', sans-serif;
@@ -67,6 +68,7 @@
             align-items: center;
             background-color: #fff;
             border-radius: 2px;
+            position: relative;
         }
 
         input {
@@ -74,10 +76,11 @@
             line-height: 40px;
             width: 100%;
             border: none;
-            padding: 0 10px;
+            padding: 0 0 0 10px;
             font-family: 'Open Sans', sans-serif;
             font-size: 0.8rem;
             letter-spacing: 0.04rem;
+            outline: none;
         }
 
         input::placeholder {
@@ -104,20 +107,41 @@
             line-height: 0.9rem;
             letter-spacing: 0.005rem;
         }
+
+        .icon_wrapper {
+            border-radius: 2px;
+            height: 40px;
+            width: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background-color: #fff;
+        }
+
+        .icon {
+            pointer-events: none;
+        }
     </style>
 
     <body>
-        <img class="back" src="./back.png">
+        <!--<img class="back" src="./back.png">-->
 
         <header>
             <label>Where does it come from?</label><label>Why do we use it?</label>
         </header>
 
         <div class="content">
-            <label class="message">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </label>
+            <label class="message">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</label>
 
-            <div class="picker"><input type="text" placeholder="Depart date"></div>
-            <div class="picker"><input type="text" placeholder="Return date"></div>
+            <div class="picker">
+                <input type="text" placeholder="Depart date">
+                <div class="icon_wrapper"><img class="icon" src="calendar.svg" alt="calendar"></div>
+            </div>
+            <div class="picker">
+                <input type="text" placeholder="Return date">
+                <div class="icon_wrapper"><img class="icon" src="calendar.svg" alt="calendar"></div>
+            </div>
 
             <button class="button">search</button>
         </div>
