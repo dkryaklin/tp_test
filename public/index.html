@@ -20,6 +20,8 @@
             background-color: #4A90E2;
             font-family: 'Open Sans', sans-serif;
             max-width: 1024px;
+            min-width: 270px;
+            overflow: hidden;
             box-sizing: border-box;
         }
 
@@ -83,6 +85,10 @@
             outline: none;
         }
 
+        input::-ms-clear {
+            display: none;
+        }
+
         input::placeholder {
             color: #9B9B9B;
             font-family: 'Open Sans', sans-serif;
@@ -138,7 +144,6 @@
                 flex-shrink: 1;
             }
         }
-
 
         @media only screen and (max-width: 768px) {
             .content {
@@ -202,15 +207,50 @@
         }
 
         @media only screen and (max-width: 440px) {
+            header {
+                display: flex;
+                flex-direction: column;
+            }
 
+            header label:last-child {
+                padding: 0;
+                margin-top: -20px;
+            }
         }
 
+        @media only screen and (max-width: 370px) {
+            .picker:first-of-type {
+                margin: 0;
+            }
+
+            .picker:last-of-type {
+                margin-top: 15px;
+            }
+
+            .picker {
+                flex-basis: 100%;
+                max-width: 100%;
+                order: 1;
+            }
+
+            .button {
+                margin-top: 15px;
+                order: 2;
+            }
+
+            .message {
+                padding: 15px 0 0;
+                order: 3;
+            }
+
+            .content {
+                margin-top: 5px;
+            }
+        }
 
     </style>
 
     <body>
-        <!--<img class="back" src="./back3.png">-->
-
         <header>
             <label>Where does it come from?</label><label>Why do we use it?</label>
         </header>
@@ -219,12 +259,12 @@
             <label class="message">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</label>
 
             <div class="picker">
-                <input type="text" placeholder="Depart date">
+                <input size="1" type="text" placeholder="Depart date">
                 <div class="icon_wrapper"><img class="icon" src="calendar.svg" alt="calendar"></div>
             </div>
 
             <div class="picker">
-                <input type="text" placeholder="Return date">
+                <input size="1" type="text" placeholder="Return date">
                 <div class="icon_wrapper"><img class="icon" src="calendar.svg" alt="calendar"></div>
             </div>
 
