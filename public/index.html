@@ -106,6 +106,7 @@
             font-size: 0.7rem;
             line-height: 0.9rem;
             letter-spacing: 0.005rem;
+            padding-right: 20px;
         }
 
         .icon_wrapper {
@@ -122,10 +123,93 @@
         .icon {
             pointer-events: none;
         }
+
+        @media only screen and (max-width: 970px) {
+            .message {
+                flex-basis: 240px;
+                flex-shrink: 0;
+            }
+
+            .button {
+                flex-shrink: 1;
+            }
+
+            .picker {
+                flex-shrink: 1;
+            }
+        }
+
+
+        @media only screen and (max-width: 768px) {
+            .content {
+                flex-wrap: wrap;
+            }
+
+            .message {
+                display: inline-flex;
+                height: auto;
+                flex-basis: 100%;
+                padding: 0 0 16px;
+            }
+
+            .picker {
+                min-width: 100px;
+                flex-basis: 100px;
+                max-width: 220px;
+                flex-shrink: 1;
+                flex-grow: 1;
+            }
+
+            .button {
+                max-width: 240px;
+                min-width: 100px;
+                margin-left: 8px;
+                flex-shrink: 1;
+                flex-grow: 1;
+                flex-basis: 100px;
+            }
+        }
+
+        @media only screen and (max-width: 570px) {
+            header label {
+                font-size: 1.11rem;
+                line-height: 2.8rem;
+            }
+
+            .message {
+                padding: 0 0 15px;
+            }
+
+            .content {
+                padding: 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .picker {
+                margin: 0;
+            }
+
+            .picker:first-of-type {
+                margin-right: 20px;
+            }
+
+            .button {
+                max-width: 100%;
+                flex-basis: 100%;
+                margin: 20px 0 0;
+            }
+        }
+
+        @media only screen and (max-width: 440px) {
+
+        }
+
+
     </style>
 
     <body>
-        <!--<img class="back" src="./back.png">-->
+        <!--<img class="back" src="./back3.png">-->
 
         <header>
             <label>Where does it come from?</label><label>Why do we use it?</label>
@@ -138,6 +222,7 @@
                 <input type="text" placeholder="Depart date">
                 <div class="icon_wrapper"><img class="icon" src="calendar.svg" alt="calendar"></div>
             </div>
+
             <div class="picker">
                 <input type="text" placeholder="Return date">
                 <div class="icon_wrapper"><img class="icon" src="calendar.svg" alt="calendar"></div>
