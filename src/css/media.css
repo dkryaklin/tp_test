@@ -1,0 +1,118 @@
+@media only screen and (max-width: 970px) {
+    .long_message {
+        flex-basis: 240px;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+
+    .button_search {
+        flex-shrink: 1;
+    }
+
+    .date_picker {
+        flex-shrink: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .long_message {
+        display: inline-flex;
+        height: auto;
+        flex-basis: 100%;
+        padding: 0 0 16px;
+    }
+
+    .date_picker {
+        min-width: 100px;
+        flex-basis: 100px;
+        max-width: 220px;
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
+
+    .button_search {
+        max-width: 240px;
+        min-width: 100px;
+        margin-left: 8px;
+        flex-shrink: 1;
+        flex-grow: 1;
+        flex-basis: 100px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .header_message {
+        font-size: 1.11rem;
+        line-height: 2.8rem;
+    }
+
+    .long_message {
+        padding: 0 0 15px;
+    }
+
+    .content {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .date_picker {
+        margin: 0;
+    }
+
+    .date_picker:nth-child(2) {
+        margin-right: 20px;
+    }
+
+    .button_search {
+        max-width: 100%;
+        flex-basis: 100%;
+        margin: 20px 0 0;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header_message:last-child {
+        padding: 0;
+        margin-top: -20px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .date_picker:nth-child(2) {
+        margin: 0;
+    }
+
+    .date_picker:nth-child(3) {
+        margin-top: 15px;
+    }
+
+    .date_picker {
+        flex-basis: 100%;
+        max-width: 100%;
+        order: 1;
+    }
+
+    .button_search {
+        margin-top: 15px;
+        order: 2;
+    }
+
+    .long_message {
+        padding: 15px 0 0;
+        order: 3;
+    }
+
+    .content {
+        margin-top: 5px;
+    }
+}
