@@ -7,13 +7,14 @@ var paths = require('./paths');
 
 module.exports = {
   devtool: 'eval',
-  entry: [
-    paths.appIndexJs
-  ],
+  entry: {
+    widget: paths.widgetIndexJs,
+    app: paths.appIndexJs
+  },
   output: {
     path: paths.appBuild,
     pathinfo: true,
-    filename: 'static/js/bundle.js',
+    filename: 'static/js/[name]_bundle.js',
     publicPath: paths.publicPath
   },
   module: {
@@ -55,7 +56,15 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       inject: true,
+      filename: 'widget.html',
+      template: paths.widgetHtml,
+      chunks: ['widget']
+    }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      filename: 'index.html',
       template: paths.appHtml,
+      chunks: ['app']
     })
   ],
 };

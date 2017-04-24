@@ -1,4 +1,1 @@
-import './css/main.css';
-import './css/media.css';
-
-console.log('test');
+console.log('test app is loaded');

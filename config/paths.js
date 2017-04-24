@@ -11,8 +11,10 @@ function resolveApp(relativePath) {
 module.exports = {
   publicPath: '/',
   appPublic: resolveApp('public'),
+  widgetIndexJs: resolveApp('src/widget.js'),
   appIndexJs: resolveApp('src/index.js'),
   appBuild: resolveApp('build'),
   appSrc: resolveApp('src'),
-  appHtml: resolveApp('public/widget.html')  
+  widgetHtml: resolveApp('public/widget.html'),
+  appHtml: resolveApp('public/index.html')
 };
