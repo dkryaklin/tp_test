@@ -14,5 +14,5 @@ module.exports = {
   appIndexJs: resolveApp('src/index.js'),
   appBuild: resolveApp('build'),
   appSrc: resolveApp('src'),
-  appHtml: resolveApp('public/index.html')  
+  appHtml: resolveApp('public/widget.html')  
 };
