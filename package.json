@@ -1,0 +1,30 @@
+{
+  "name": "tp_test",
+  "version": "0.0.1",
+  "author": "Dmitry Kryaklin",
+  "description": "result of test task for travelpayouts",
+  "homepage": "https://github.com/dkryaklin/tp_test",
+  "scripts": {
+    "start": "node scripts/start.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "6.7.2",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "0.26.1",
+    "detect-port": "1.1.0",
+    "html-webpack-plugin": "2.24.0",
+    "opn": "^4.0.2",
+    "postcss-inline-svg": "^2.3.0",
+    "postcss-loader": "1.2.2",
+    "style-loader": "0.13.1",
+    "webpack": "1.14.0",
+    "webpack-dev-server": "1.16.2"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}
