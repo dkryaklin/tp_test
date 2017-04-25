@@ -32,11 +32,8 @@ module.exports = {
         loader: 'style!css?importLoaders=1!postcss'
       },
       {
-        test: /\.svg$/,
-        loader: 'file',
-        query: {
-          name: 'static/media/[name].[hash:8].[ext]'
-        }
+          test: /\.svg$/,
+          loader: 'svg-inline-loader'
       }
     ]
   },
