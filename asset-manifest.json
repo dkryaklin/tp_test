@@ -1,8 +1,8 @@
 {
-  "client.js": "static/js/client.f59f5e79.js",
-  "client.js.map": "static/js/client.f59f5e79.js.map",
+  "client.js": "static/js/client.js",
+  "client.js.map": "static/js/client.js.map",
   "widget.css": "static/css/widget.54e3a0c8.css",
   "widget.css.map": "static/css/widget.54e3a0c8.css.map",
-  "widget.js": "static/js/widget.8327ec80.js",
-  "widget.js.map": "static/js/widget.8327ec80.js.map"
+  "widget.js": "static/js/widget.js",
+  "widget.js.map": "static/js/widget.js.map"
 }
