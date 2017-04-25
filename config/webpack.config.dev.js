@@ -9,7 +9,7 @@ module.exports = {
   devtool: 'eval',
   entry: {
     widget: paths.widgetIndexJs,
-    app: paths.appIndexJs
+    client: paths.clientIndexJs
   },
   output: {
     path: paths.appBuild,
@@ -64,7 +64,7 @@ module.exports = {
       inject: true,
       filename: 'index.html',
       template: paths.appHtml,
-      chunks: ['app']
+      excludeChunks: ['widget', 'client']
     })
   ],
 };

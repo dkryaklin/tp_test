@@ -12,7 +12,7 @@ module.exports = {
   publicPath: '/',
   appPublic: resolveApp('public'),
   widgetIndexJs: resolveApp('src/widget.js'),
-  appIndexJs: resolveApp('src/index.js'),
+  clientIndexJs: resolveApp('src/client.js'),
   appBuild: resolveApp('build'),
   appSrc: resolveApp('src'),
   widgetHtml: resolveApp('public/widget.html'),
