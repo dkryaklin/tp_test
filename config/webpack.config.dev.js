@@ -57,12 +57,14 @@ module.exports = {
   plugins: [
     new InterpolateHtmlPlugin({'PUBLIC_URL': publicUrl}),
     new HtmlWebpackPlugin({
+      hash: true,
       inject: true,
       filename: 'widget.html',
       template: paths.widgetHtml,
       chunks: ['widget']
     }),
     new HtmlWebpackPlugin({
+      hash: true,
       inject: true,
       filename: 'index.html',
       template: paths.appHtml,

@@ -5,7 +5,9 @@
   "homepage": "https://dkryaklin.github.io/tp_test",
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "autoprefixer": "6.7.2",
@@ -15,6 +17,7 @@
     "css-loader": "0.26.1",
     "detect-port": "1.1.0",
     "extract-text-webpack-plugin": "1.0.1",
+    "gh-pages": "^0.12.0",
     "html-webpack-plugin": "^2.24.0",
     "interpolate-html-plugin": "^2.0.0",
     "opn": "^4.0.2",

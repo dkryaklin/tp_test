@@ -21,8 +21,8 @@ module.exports = {
   },
   output: {
     path: paths.appBuild,
-    filename: 'static/js/[name].[chunkhash:8].js',
-    chunkFilename: 'static/js/[name].[chunkhash:8].chunk.js',
+    filename: 'static/js/[name].js',
+    chunkFilename: 'static/js/[name].chunk.js',
     publicPath: publicPath
   },
   module: {
@@ -65,6 +65,7 @@ module.exports = {
       filename: 'widget.html',
       template: paths.widgetHtml,
       chunks: ['widget'],
+      hash: true,
       minify: {
         removeComments: true,
         collapseWhitespace: true,
@@ -83,6 +84,7 @@ module.exports = {
       filename: 'index.html',
       template: paths.appHtml,
       excludeChunks: ['widget', 'client'],
+      hash: true,
       minify: {
         removeComments: true,
         collapseWhitespace: true,
