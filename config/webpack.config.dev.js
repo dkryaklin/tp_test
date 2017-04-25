@@ -14,13 +14,13 @@ module.exports = {
   output: {
     path: paths.appBuild,
     pathinfo: true,
-    filename: 'static/js/[name]_bundle.js',
+    filename: 'static/js/[name].js',
     publicPath: paths.publicPath
   },
   module: {
     loaders: [
       {
-        test: /\.(js)$/,
+        test: /\.js$/,
         include: paths.appSrc,
         loader: 'babel',
         query: {

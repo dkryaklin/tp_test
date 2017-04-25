@@ -16,5 +16,6 @@ module.exports = {
   appBuild: resolveApp('build'),
   appSrc: resolveApp('src'),
   widgetHtml: resolveApp('public/widget.html'),
-  appHtml: resolveApp('public/index.html')
+  appHtml: resolveApp('public/index.html'),
+  servedPath: '/tp_test/'
 };
