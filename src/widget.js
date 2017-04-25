@@ -1,5 +1,5 @@
-import './css/main.css';
-import './css/media.css';
+import './css/widget_main.css';
+import './css/widget_media.css';
 
 import calendarIcon from './images/calendar.svg';
 
