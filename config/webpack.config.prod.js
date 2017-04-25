@@ -17,7 +17,8 @@ module.exports = {
   devtool: 'source-map',
   entry: {
     widget: paths.widgetIndexJs,
-    client: paths.clientIndexJs
+    client: paths.clientIndexJs,
+    app: paths.appIndexJs
   },
   output: {
     path: paths.appBuild,
@@ -83,7 +84,7 @@ module.exports = {
       inject: true,
       filename: 'index.html',
       template: paths.appHtml,
-      excludeChunks: ['widget', 'client'],
+      chunks: ['app'],
       hash: true,
       minify: {
         removeComments: true,

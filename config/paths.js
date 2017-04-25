@@ -13,6 +13,7 @@ module.exports = {
   appPublic: resolveApp('public'),
   widgetIndexJs: resolveApp('src/widget.js'),
   clientIndexJs: resolveApp('src/client.js'),
+  appIndexJs: resolveApp('src/app.js'),
   appBuild: resolveApp('build'),
   appSrc: resolveApp('src'),
   widgetHtml: resolveApp('public/widget.html'),

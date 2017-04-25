@@ -13,7 +13,8 @@ module.exports = {
   devtool: 'eval',
   entry: {
     widget: paths.widgetIndexJs,
-    client: paths.clientIndexJs
+    client: paths.clientIndexJs,
+    app: paths.appIndexJs
   },
   output: {
     path: paths.appBuild,
@@ -68,7 +69,7 @@ module.exports = {
       inject: true,
       filename: 'index.html',
       template: paths.appHtml,
-      excludeChunks: ['widget', 'client']
+      chunks: ['app']
     }),
     new webpack.DefinePlugin({'PUBLIC_URL': JSON.stringify(publicUrl)})
   ],
