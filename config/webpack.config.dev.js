@@ -1,9 +1,13 @@
 'use strict';
 
 var autoprefixer = require('autoprefixer');
+var webpack = require('webpack');
 var inlineSvg = require('postcss-inline-svg');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var InterpolateHtmlPlugin = require('interpolate-html-plugin');
 var paths = require('./paths');
+
+var publicUrl = '';
 
 module.exports = {
   devtool: 'eval',
@@ -51,6 +55,7 @@ module.exports = {
     ];
   },
   plugins: [
+    new InterpolateHtmlPlugin({'PUBLIC_URL': publicUrl}),
     new HtmlWebpackPlugin({
       inject: true,
       filename: 'widget.html',
@@ -62,6 +67,7 @@ module.exports = {
       filename: 'index.html',
       template: paths.appHtml,
       excludeChunks: ['widget', 'client']
-    })
+    }),
+    new webpack.DefinePlugin({'PUBLIC_URL': JSON.stringify(publicUrl)})
   ],
 };
