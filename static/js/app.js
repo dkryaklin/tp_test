@@ -1,0 +1,2 @@
+!function(t){function o(r){if(e[r])return e[r].exports;var n=e[r]={exports:{},id:r,loaded:!1};return t[r].call(n.exports,n,n.exports,o),n.loaded=!0,n.exports}var e={};return o.m=t,o.c=e,o.p="/tp_test/",o(0)}([function(t,o,e){"use strict";e(2),console.log("app loaded")},,function(t,o){}]);
+//# sourceMappingURL=app.js.map
