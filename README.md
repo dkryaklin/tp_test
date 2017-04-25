@@ -1,6 +1,7 @@
 # travelpayouts_test
 
 Demo: <https://dkryaklin.github.io/tp_test>
+
 Widget: <https://dkryaklin.github.io/tp_test/widget.html>
 
 Тестовое задание на позицию Frontend Developer в компанию Aviasales.
