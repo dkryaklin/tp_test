@@ -4,6 +4,8 @@ Demo: <https://dkryaklin.github.io/tp_test>
 
 Widget: <https://dkryaklin.github.io/tp_test/widget.html>
 
+!!!Advanced Task Solution: <https://github.com/dkryaklin/tp_test_advanced> !!!
+
 Тестовое задание на позицию Frontend Developer в компанию Aviasales.
 
 Для запуска проекта необходимо выполнить в командной строке:
